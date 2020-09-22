@@ -20,27 +20,6 @@ router.get("/:slug", async (req, res) => {
     res.render("articles/show", { article: article });
 });
 
-// router.post('/', async (req, res) => {
-//     // console.log(req.file)
-//     // const fileName = req.file != null ? req.file.filename : null;
-//     const article = new Article({
-//         // coverImageName: fileName,
-//         author: req.body.author,
-//         title: req.body.title,
-//         description: req.body.description,
-//         markdown: req.body.markdown
-//     });
-
-//     saveCover(article, req.body.cover);
-
-//     try {
-//         const newArticle = await article.save();
-//         res.redirect(`/articles/${newArticle.slug}`);
-//     } catch (err) {
-//         console.log(err)
-//         res.render(`articles/new`, { article: article });
-//     }
-// })
 
 router.post("/", async (req, res, next) => {
     req.article = new Article();
@@ -74,7 +53,6 @@ router.put("/like"), async (req, res) => {
         console.log(err)
         // res.render("/", { article: article });
     }
-
 }
 
 router.post("/delete-all-posts", async (req, res) => {

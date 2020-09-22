@@ -6,9 +6,6 @@ const createDomPurify = require('dompurify');
 const { JSDOM } = require('jsdom');
 const dompurify = createDomPurify(new JSDOM().window);
 
-// const coverImageBasePath = 'uploads/avatars';
- 
-
 
 const articleSchema = new Schema({
     title: {
