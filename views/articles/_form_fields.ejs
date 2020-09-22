@@ -1,3 +1,11 @@
+<div>
+    <label>Cover</label>
+    <input type="file" name="cover" class="filepond" data-max-file-size="3MB" required>
+</div>
+<div class="form-group">
+    <label for="author">Author</label>
+    <input value="<%= article.author %>" type="text" name="author" id="author" class="form-control" required>
+</div>
 <div class="form-group">
     <label for="title">Title</label>
     <input value="<%= article.title %>" type="text" name="title" id="title" class="form-control" required>
