@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Piedra&family=Press+Start+2P&display=swap");
+
+body {
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #4ca1af,
+    #2c3e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #4ca1af,
+    #2c3e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blog-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.header-title {
+  font-family: "Bangers", cursive;
+  font-size: 4em;
+  margin: 40px;
+  margin-left: 40px;
+  color: white;
+}
+
+.btn-nav {
+  display: flex;
+  margin: 20px;
+}
+
+.btn-newArticle,
+.btn-deleteAll,
+.btn-readMore {
+  display: flex;
+  width: auto;
+  height: 21px;
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  box-shadow: inset 0px 1px 3px 0px #91b8b3;
+  background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+  background-color: #768d87;
+  border-radius: 5px;
+  border: 1px solid #566963;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.btn-deleteAll,
+.btn-readMore {
+  height: auto;
+}
+
+.btn-readMore {
+  width: 90px;
+  padding: 15px;
+  font-size: 1em;
+}
+
+.btn-newArticle:hover,
+.btn-deleteAll:hover {
+  color: orange;
+  background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color: #6c7c7c;
+}
+
+.btn-deleteAll:hover {
+  color: red;
+}
+
+.btn-newArticle:active,
+.btn-deleteAll:active {
+  position: relative;
+  top: 1px;
+}
+
+.card-article {
+  display: flex;
+  width: 70%;
+  height: 400px;
+  margin: 20px auto;
+  border: 1px solid #3a3a40;
+  border-radius: 10px;
+  background: whitesmoke;
+  overflow: hidden;
+}
+
+.cover {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-description {
+  margin: 20px;
+  width: 100%;
+}
+
+.article-author {
+  margin: 20px;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2.5em;
+  color: #3a3a40;
+}
+
+.article-title,
+.article-description {
+  font-family: "Piedra", cursive;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.article-description {
+  width: 90%;
+  height: 90px;
+  margin: 0 auto;
+  font-size: 1em;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.article-createdAt {
+  display: flex;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.3em;
+  color: #3a3a40;
+  align-items: center;
+}
+
+.article-footer {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-thumbs {
+  display: flex;
+  width: auto;
+}
+
+.thumbs {
+  margin: 0 10px;
+  align-items: center;
+  display: flex;
+}
+
+.thumbs-img {
+  width: 30px;
+}
+
+.thumbs-rate {
+  font-family: "Piedra", cursive;
+  font-size: 1em;
+  text-align: center;
+  margin: 10px;
+}
+
+.blog-alert {
+  margin-top: 150px;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 5em;
+  color: orange;
+}
